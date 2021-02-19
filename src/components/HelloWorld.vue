@@ -63,8 +63,8 @@ export default defineComponent({
   },
   setup: () => {
     const count = ref(0)
-    const useScriptSetup = ref(false);
-    const useTsPlugin = ref(false);
+    const useScriptSetup = ref('')
+    const useTsPlugin = ref('')
     return { count, useScriptSetup, useTsPlugin }
   }
 })
