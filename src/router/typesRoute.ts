@@ -1,5 +1,4 @@
-
-import { Component } from "vue";
+import { Component } from 'vue'
 // import { RouteRecordRaw } from 'vue-router';
 
 export interface RouteMeta {

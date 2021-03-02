@@ -1,15 +1,13 @@
-
 <template>
   <router-view />
-  <div>nihao, app.vue</div>
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue'
+import { defineComponent } from 'vue'
 
-  export default defineComponent({
-    name: 'App'
-  })
+export default defineComponent({
+  name: 'App'
+})
 </script>
 
 <style>

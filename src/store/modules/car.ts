@@ -1,7 +1,6 @@
-
 import { Commit } from 'vuex'
 
-import { SET_CAR_INFO } from '../constant'
+import { SET_CAR_INFO } from 'src/store/constant'
 
 // define your typings for the store state
 interface CarState {
@@ -24,9 +23,11 @@ const actions = {
 }
 
 const mutations = {
-  [SET_CAR_INFO](state: CarState, playload: number ): void {
+  [SET_CAR_INFO](newState: CarState, playload: number): void {
     state.count = playload
   }
 }
 
-export default { namespaced: true, state, actions, mutations }
+export default {
+  namespaced: true, state, actions, mutations
+}

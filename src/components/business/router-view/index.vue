@@ -1,4 +1,3 @@
-
 <template>
   <div style="height: 100%">
     <keep-alive>
@@ -9,9 +8,9 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue'
+import { defineComponent } from 'vue'
 
-  export default defineComponent({
-    name: 'RouterViewContainer'
-  })
+export default defineComponent({
+  name: 'RouterViewContainer'
+})
 </script>

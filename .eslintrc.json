@@ -12,11 +12,21 @@
     "parser": "@typescript-eslint/parser",
     "sourceType": "module"
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".tsx", ".vue"]
+      }
+    }
+  },
   "plugins": [
     "vue",
     "@typescript-eslint"
   ],
   "rules": {
-    "semi": ["error", "never", { "omitLastInOneLineBlock": true}]
+    "no-console": "off",
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", "never"],
+    "import/no-unresolved": 0
   }
 }
