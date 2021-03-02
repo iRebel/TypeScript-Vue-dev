@@ -52,21 +52,21 @@
 </template>
 
 <script lang="ts">
-import { ref, defineComponent } from 'vue'
-export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String
+  import { ref, defineComponent } from 'vue'
+  export default defineComponent({
+    name: 'HelloWorld',
+    props: {
+      msg: {
+        type: String
+      }
+    },
+    setup: () => {
+      const count = ref(0)
+      const useScriptSetup = ref('')
+      const useTsPlugin = ref('')
+      return { count, useScriptSetup, useTsPlugin }
     }
-  },
-  setup: () => {
-    const count = ref(0)
-    const useScriptSetup = ref('')
-    const useTsPlugin = ref('')
-    return { count, useScriptSetup, useTsPlugin }
-  }
-})
+  })
 </script>
 
 <style scoped>
