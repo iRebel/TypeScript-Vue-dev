@@ -1,4 +1,3 @@
-
 // Global Info 模块
 export const SET_GLOBAL_INFO: string = 'SET_GLOBAL_INFO'
 

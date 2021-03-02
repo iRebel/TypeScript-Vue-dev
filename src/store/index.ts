@@ -1,11 +1,10 @@
-
 /**
  * https://next.vuex.vuejs.org/guide/structure.html
  * https://next.vuex.vuejs.org/guide/typescript-support.html#typing-usestore-composition-function
 */
 
 // import { InjectionKey } from 'vue'
-import { createStore, createLogger } from 'vuex'
+import { createStore /* createLogger */ } from 'vuex'
 import car from './modules/car'
 // import task from './modules/task'
 
@@ -13,9 +12,9 @@ import car from './modules/car'
 
 const store = createStore({
   modules: {
-    car,
+    car
     // task
-  },
+  }
   // strict: debug,
   // plugins: debug ? [createLogger()] : []
 })

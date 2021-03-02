@@ -27,6 +27,7 @@
     "no-console": "off",
     "semi": ["error", "never"],
     "comma-dangle": ["error", "never"],
-    "import/no-unresolved": 0
+    "import/no-unresolved": 0,
+    "import/extensions": ["error", "ignorePackages", { "js": "never", "jsx": "never", "ts": "never", "tsx": "never" }]
   }
 }

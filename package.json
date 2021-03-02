@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vuedx-typecheck . && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "eslintFix": "eslint --fix --ext .tsx,.ts,.vue ./src"
   },
   "dependencies": {
     "vue": "^3.0.5",
